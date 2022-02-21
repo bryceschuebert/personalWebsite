@@ -316,13 +316,11 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(width: 700, placeholder: BLURRED)
                 }
               }
               tech
-              github
               external
-              cta
             }
             html
           }
@@ -348,7 +346,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Here are some cool projects
       </h2>
 
       <StyledProjectsGrid>
