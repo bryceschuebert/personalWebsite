@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Bryce Schuebert',
+    title: 'Bryce Schuebert Portfolio',
     description:
       'Bryce Schuebert is a mechanical engineer designing, fabricating, and delivering bespoke products',
     siteUrl: 'https://bryceschuebert.com', // No trailing slash allowed!
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'BryceSchuebert',
+        short_name: 'BryceSchuebert',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

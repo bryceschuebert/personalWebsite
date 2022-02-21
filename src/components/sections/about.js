@@ -61,7 +61,6 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
 
     &:hover,
     &:focus {
@@ -82,9 +81,6 @@ const StyledPic = styled.div`
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
-      transition: var(--transition);
     }
 
     &:before,
@@ -126,7 +122,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'NX CAD',
+    'Keyshot',
+    'Python',
+    'Ai, Xd, Sp',
+    'JavaScript (ES6+)',
+    'React',
+    'SQLite3',
+    'Node.js',
+    'SysML',
+    'C',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,30 +143,39 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I’m Bryce—a mechanical engineer with a passion for designing and developing
+              human-centered products.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              As a full-time second-year undergrad student, I am aware of the barriers many students
+              faced in applying textbook knowledge to practical projects. In response, I helped
+              launch the{' '}
+              <a href="https://www.engineering.uga.edu/fablab">
+                University of Georgia Student Fabrication Lab
+              </a>
+              , retro-fitting an outdated lab with cutting-edge technology. Utilizing my fabrication
+              experience, I drafted a safety curriculum and project so novice students could
+              confidently operate complex machinery. Find out more about other projects from the
+              fabrication lab in the work section!
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Post undergrad, I sought a deeper understanding of manufacturing design process and
+              joined the MODE2L (Manufacturing Optimization, Design, and Engineering Education Lab)
+              Group as a research assistant. I optimized a master’s class schedule compounding the
+              formal design and system engineering process so my fabrication experience enhanced my
+              ability to create sustainable, inclusive products.
+            </p>
+
+            <p>
+              My academic achievement is not limited to my immediate projects. I recently finished{' '}
+              <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">
+                Harvard's CS50x
+              </a>
+              , where I learned C and further refined my working knowledge of Python, SQL, and
+              Flask. Beyond that, I enjoy trying new foods with friends, running long distances, and
+              hanging out with my cats Blue & Nugget.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -174,7 +190,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/newyorkpic.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
