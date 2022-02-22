@@ -2,19 +2,19 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Bryce Schuebert Portfolio',
+    title: 'Bryce Schuebert',
     description:
       'Bryce Schuebert is a mechanical engineer designing, fabricating, and delivering bespoke products',
-    siteUrl: 'https://bryceschuebert.com', // No trailing slash allowed!
+    siteUrl: 'https://www.bryceschuebert.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bryceschuebert',
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     {

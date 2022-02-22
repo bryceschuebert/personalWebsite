@@ -28,7 +28,7 @@ const StyledTabList = styled.div`
   position: relative;
   z-index: 3;
   width: max-content;
-  padding: 0;
+  padding: none;
   margin: 0;
   list-style: none;
 
@@ -79,7 +79,7 @@ const StyledTabButton = styled.button`
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
 
   @media (max-width: 768px) {
     padding: 0 15px 2px;
@@ -117,8 +117,8 @@ const StyledHighlight = styled.div`
     bottom: 0;
     width: 100%;
     max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
+    height: 1px;
+    margin-left: 75px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
   }
   @media (max-width: 480px) {

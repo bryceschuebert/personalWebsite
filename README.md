@@ -4,4 +4,4 @@
   </a>
 </p>
 
-This is my personal website adapted from the brilliant Brittany Chiang's V4 website build.
+This is my personal website adapted from the brilliant Brittany Chiang's V4 build.
