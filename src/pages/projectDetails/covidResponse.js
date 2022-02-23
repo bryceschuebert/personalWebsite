@@ -243,20 +243,18 @@ const CovidResponse = ({ location }) => {
                   and obstructed the user from moving their head around.
                 </p>
               </div>
-            </StyledText>
-            <StyledPic>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../../images/projects/covid19/1.JPG"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="face shield prototype 1"
-                />
-              </div>
-            </StyledPic>
-            <StyledText>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../images/projects/covid19/1.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="face shield prototype 1"
+                  />
+                </div>
+              </StyledPic>
               <div>
                 <h2 className="numbered-heading1">Final Design</h2>
                 <p>

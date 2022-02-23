@@ -1,8 +1,9 @@
 ---
 date: '3'
 title: 'Curiosity Cabinet'
-cover: './littleCreature.PNG'
-external: 'https://halcyon-theme.netlify.com/'
+cover: '../../../src/images/projects/creature/1.jpg'
+external: ''
+internal: 'creature'
 tech:
   - Procreate
   - Shapr3D

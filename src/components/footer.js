@@ -92,8 +92,8 @@ const Footer = () => {
 
   return (
     <StyledFooter>
-      <Link to="/#about">
-        <h3>Return to Top</h3>
+      <Link to="/#">
+        <h3>Return Home</h3>
       </Link>
       <StyledSocialLinks>
         <ul>
