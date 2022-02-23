@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
@@ -91,6 +92,9 @@ const Footer = () => {
 
   return (
     <StyledFooter>
+      <Link to="/#about">
+        <h3>Return to Top</h3>
+      </Link>
       <StyledSocialLinks>
         <ul>
           {socialMedia &&

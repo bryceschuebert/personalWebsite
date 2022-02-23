@@ -165,7 +165,7 @@ const StyledPic = styled.div`
   }
 `;
 
-const CovidResponse = ({ location }) => {
+const Umbrella = ({ location }) => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -192,25 +192,21 @@ const CovidResponse = ({ location }) => {
             <StyledText>
               <div>
                 <p>
-                  My Design Methodologies course focused on the holistic design and system
-                  engineering process. My professor broke the class into 4-person groups to practice
-                  the ideation phase and instructed us to redesign an everyday item. We decided on
-                  an umbrella since there has been little variation in its' design in the past
-                  century. While the project ended after the ideation phase, I decided to create a
-                  CAD model of our design and practice using Keyshot to make realistic product
-                  representations.
+                  Last year, my Design Methodologies course focused on the holistic design and
+                  system engineering process. My professor broke the class into 4-person groups to
+                  practice the ideation phase and instructed us to redesign an everyday item. We
+                  decided on an umbrella since there has been little variation in its' design in the
+                  past century. While the project ended after the ideation phase, I decided to
+                  create a CAD model of our design and practice using Keyshot to make realistic
+                  product representations.
                 </p>
               </div>
               <div>
                 <h2 className="numbered-heading1">Observation</h2>
                 <p>
-                  To begin, we defined our requirements. Due to a country-wide supply shortage, the
-                  face shield material had to be easily accessible, cheap, cleanable, and
-                  antimicrobial. The material also had to be compatible with our existing machinery.
-                  Stakeholders said they would be wearing the face shields for extended periods, so
-                  the design needed to be lightweight &#38; breathable. Finally, the shield had to
-                  cover as much of the face as possible without restricting movement to protect the
-                  user.
+                  With limited access to stakeholders, we decided to use the Post-It note process to
+                  gather requirements. Every classmate received 5 Post-It notes and was instructed
+                  to write or sketch anything they wished an umbrella could do.
                 </p>
               </div>
             </StyledText>
@@ -228,120 +224,117 @@ const CovidResponse = ({ location }) => {
             </StyledPic>
             <StyledText>
               <div>
-                <h2 className="numbered-heading1">Initial Design</h2>
                 <p>
-                  We researched existing face shield plans, and our first prototype was a modified
-                  file from the open-source CAD website{' '}
-                  <a href="https://www.thingiverse.com/">Thingiverse</a>. The shield was 2 mm clear
-                  acrylic that was easy to laser cut without dangerous fumes, and the straps were
-                  hand-cut velcro. While the design was 3D printable and lightweight, our
-                  stakeholders said it was extremely uncomfortable due to the thin headband and
-                  velcro straps. Also, FDM 3D prints are rough and anisotropic, making the bands
-                  hard to sanitize and easily breakable. Lastly, the shield material was too rigid
-                  and obstructed the user from moving their head around.
+                  After collecting the notes, we distilled the most common needs into functional and
+                  non-functional requirements. Many of the notes indicated a demand for a more
+                  intelligent, portable umbrella that could keep the user not only dry but safe.
+                </p>
+              </div>
+              <div></div>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../images/projects/umbrella/2.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Sticky notes with observations"
+                  />
+                </div>
+              </StyledPic>
+            </StyledText>
+            <div></div>
+            <StyledText>
+              <div>
+                <h2 className="numbered-heading1">Ideation</h2>
+                <p>
+                  Since a weaponized umbrella is a bad idea for many reasons, we brainstormed
+                  designs that focused on providing a safer, preventative experience. Most of the
+                  notes suggested that users wanted an umbrella that provided illumination. Since
+                  that would require energy, we considered further possibilities to take advantage
+                  of the power. Many of the notes suggested including GPS, phone calls, and weather
+                  forecasts, but implementing these required some form of input from the user. This
+                  input was tough to design since portability was a top functional requirement.
+                </p>
+              </div>
+              <div>
+                <StyledPic>
+                  <div className="wrapper">
+                    <StaticImage
+                      className="img"
+                      src="../../images/projects/umbrella/3.JPG"
+                      width={500}
+                      quality={95}
+                      formats={['AUTO', 'WEBP', 'AVIF']}
+                      alt="Functional ideas"
+                    />
+                  </div>
+                </StyledPic>
+              </div>
+              <div>
+                <p>
+                  Taking inspiration from the original iPod, I sketched a glass scroll wheel with a
+                  circular screen underneath that would sit on top of the umbrella handle. To
+                  prevent unwanted feedback, the wheel would not be touch-sensitive; instead, users
+                  could use their thumb to move the glass wheel left or right and press down for
+                  input. Users could easily see incoming notifications from their phones with just
+                  one hand.
+                </p>
+              </div>
+              <div>
+                <StyledPic>
+                  <div className="wrapper">
+                    <StaticImage
+                      className="img"
+                      src="../../images/projects/umbrella/4.JPG"
+                      width={500}
+                      quality={95}
+                      formats={['AUTO', 'WEBP', 'AVIF']}
+                      alt="Procreate sketch of the scroll wheel"
+                    />
+                  </div>
+                </StyledPic>
+              </div>
+              <div>
+                <p>
+                  Our final design remained portable and included the scroll wheel, an LED light
+                  around the brim, a flashlight in the base.
+                </p>
+              </div>
+              <div>
+                <h2 className="numbered-heading1">Model Representation</h2>
+                <p>
+                  With the project complete, I decided to try out Sharpr3D to create a CAD umbrella
+                  model. I imported the model components into Keyshot 10 and added color, texture,
+                  and lighting to create a realistic visual. I used Illustrator to create a simple
+                  scroll wheel app illustration and added emissive illumination to provide an OLED
+                  effect.
                 </p>
               </div>
             </StyledText>
+            <div></div>
             <StyledPic>
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/covid19/1.JPG"
+                  src="../../images/projects/umbrella/7.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="face shield prototype 1"
+                  alt="Procreate sketch of the scroll wheel"
                 />
               </div>
             </StyledPic>
-            <StyledText>
-              <div>
-                <h2 className="numbered-heading1">Final Design</h2>
-                <p>
-                  Building on stakeholder feedback, I created a new headband in Inventor that was
-                  thick enough to be virtually unbreakable. It could also fit a replaceable foam pad
-                  for comfort and cleanability, making 3D printing a viable option again. For
-                  scalability, the headband design could be stacked 12 high with a small amount of
-                  support in-between, and 2 stacks could be nested onto one 3D print bed. We could
-                  print 24 headbands every 12 hours on just one printer on the fastest setting. We
-                  used ABS material for maximum rigidity, cleanliness, and widely available.
-                </p>
-              </div>
-              <div>
-                <StyledPic>
-                  <div className="wrapper">
-                    <StaticImage
-                      className="img"
-                      src="../../images/projects/covid19/2.JPG"
-                      width={500}
-                      quality={95}
-                      formats={['AUTO', 'WEBP', 'AVIF']}
-                      alt="3D printed headband stacks"
-                    />
-                  </div>
-                </StyledPic>
-              </div>
-              <div>
-                <p>
-                  The straps and shields were redesigned to be nestable and laser cut to avoid a
-                  bottleneck. Instead of using velcro, the headband had multiple hooks on either
-                  side that a flexible rubber strap could fasten onto. After I manually adjusted the
-                  laser cutter for the thickness of the rubber, we could cut 80 straps from one
-                  rubber sheet in under 30 minutes. Instead of using 2 mm acrylic sheets, we used
-                  cheaper 1 mm sheets for increased flexibility. I modified the shield to have
-                  45-degree cuts on either side, so users could move their heads side-to-side.
-                </p>
-              </div>
-              <div>
-                <StyledPic>
-                  <div className="wrapper">
-                    <StaticImage
-                      className="img"
-                      src="../../images/projects/covid19/3.JPG"
-                      width={500}
-                      quality={95}
-                      formats={['AUTO', 'WEBP', 'AVIF']}
-                      alt="Finished Face Shield"
-                    />
-                  </div>
-                </StyledPic>
-              </div>
-              <div>
-                <p>
-                  While we had to make minor adjustments after initial feedback, our stakeholders
-                  were extremely satisfied with the design. After the Red &#38; Black newspaper
-                  published an{' '}
-                  <a href="https://www.redandblack.com/athensnews/uga-college-of-engineering-produces-face-shields-for-health-care-workers/article_b08a3f64-755b-11ea-9f6e-2399aefa6819.html#:~:text=As%20of%20Monday%2C%20the%20College%20of%20Engineering%20produced%20about%2050%20face%20shields%20and%20hope%20to%20have%20about%20500%20by%20the%20end%20of%20the%20week%20for%20the%20hospital%2C%20which%20is%20more%20than%20the%20hospital%E2%80%99s%20request%2C%20said%20Bryce%20Schuebert%2C%20the%20student%20project%20manager.">
-                    article
-                  </a>{' '}
-                  about the face shields, we received requests from across the state for shields,
-                  swabs, and respirators.
-                </p>
-              </div>
-              <div>
-                <StyledPic>
-                  <div className="wrapper">
-                    <StaticImage
-                      className="img"
-                      src="../../images/projects/covid19/5.JPG"
-                      width={500}
-                      quality={95}
-                      formats={['AUTO', 'WEBP', 'AVIF']}
-                      alt="Bryce holding 3D printed swabs"
-                    />
-                  </div>
-                </StyledPic>
-              </div>
-            </StyledText>
           </div>
         </StyledAboutSection>
       </main>
     </Layout>
   );
 };
-CovidResponse.propTypes = {
+Umbrella.propTypes = {
   location: PropTypes.object.isRequired,
   data: PropTypes.object.isRequired,
 };
 
-export default CovidResponse;
+export default Umbrella;

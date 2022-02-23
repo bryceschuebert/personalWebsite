@@ -265,8 +265,11 @@ const Menu = () => {
                 ))}
               </ol>
             )}
-
-            <a href="/resume.pdf" className="resume-link">
+            <a
+              className="resume-link"
+              href="/Bryce_Schuebert_PD_Spring2022.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
               Resume
             </a>
           </nav>
