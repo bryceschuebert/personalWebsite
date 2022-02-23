@@ -26,7 +26,7 @@ const StyledAboutSection = styled.section`
     display: flex;
     align-items: center;
     position: relative;
-    margin: 40px 0 10px;
+    margin: 10px 0 20px;
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
@@ -105,7 +105,7 @@ const StyledPic = styled.div`
   max-width: 300px;
 
   @media (max-width: 768px) {
-    margin: 50px auto 0;
+    margin: 50px auto 50px;
     width: 70%;
   }
 
@@ -185,6 +185,7 @@ const CovidResponse = ({ location }) => {
           <h1 className="big-heading">COVID-19 Response</h1>
           <p className="subtitle">March 2020 -- July 2020</p>
         </header>
+
         <StyledAboutSection id="about" ref={revealContainer}>
           <div className="inner">
             <StyledText>
@@ -197,8 +198,32 @@ const CovidResponse = ({ location }) => {
                   additional PPE supplies, we rushed to design and manufacture economical,
                   comfortable, and practical face shields.
                 </p>
-
-                <h2 className="numbered-heading1">Initial Design</h2>
+              </div>
+            </StyledText>
+            <StyledPic>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../../../content/featured/Covid19/swabs.png"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="face shield prototype 1"
+                />
+              </div>
+            </StyledPic>
+            <StyledText>
+              <div>
+                <h2 className="numbered-heading1">Requirements</h2>
+                <p>
+                  To begin, we defined our requirements. Due to a country-wide supply shortage, the
+                  face shield material had to be easily accessible, cheap, cleanable, and
+                  antimicrobial. The material also had to be compatible with our existing machinery.
+                  Stakeholders said they would be wearing the face shields for extended periods, so
+                  the design needed to be lightweight &#38; breathable. Finally, the shield had to
+                  cover as much of the face as possible without restricting movement to protect the
+                  user.
+                </p>
               </div>
             </StyledText>
             <StyledPic>
@@ -209,21 +234,21 @@ const CovidResponse = ({ location }) => {
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Headshot"
+                  alt="face shield prototype 1"
                 />
               </div>
             </StyledPic>
             <StyledText>
-              <p>
-                In March 2020, COVID-19 shut down the University of Georgia (and the rest of the
-                country) for the foreseeable future. All students and non-essential employees were
-                sent home, and my fabrication team initially assumed we'd be going away as well.
-                However, after Piedmont Athens Regional Medical Center desperately reached out for
-                additional PPE supplies, we rushed to design and manufacture economical,
-                comfortable, and practical face shields.
-              </p>
-
-              <h2 className="numbered-heading1">Initial Design</h2>
+              <div>
+                <h2 className="numbered-heading1">Initial Design</h2>
+                <p>
+                  We researched existing face shield plans, and our first prototype was a modified
+                  file from the open-source CAD website Thing-I-Verse. While the design was 3D
+                  printable and lightweight, our stakeholders said it was extremely uncomfortable
+                  due to the thin headband. Also, the 3D print's rough texture made the bands hard
+                  to sanitize and easily breakable.
+                </p>
+              </div>
             </StyledText>
           </div>
         </StyledAboutSection>

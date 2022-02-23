@@ -2,7 +2,8 @@
 date: '1'
 title: 'umBRELLA'
 cover: './umbrellaProf.JPG'
-external: 'https://halcyon-theme.netlify.com/'
+external: ''
+internal: ''
 tech:
   - Sharpr3D
   - Illustrator

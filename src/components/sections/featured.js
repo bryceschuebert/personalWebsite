@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import sr from '@utils/sr';
@@ -322,6 +322,7 @@ const Featured = () => {
               tech
               github
               external
+              internal
             }
             html
           }
@@ -354,7 +355,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, internal, title, tech, github, cover, cta } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -390,6 +391,11 @@ const Featured = () => {
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
                         </a>
+                      )}
+                      {internal && (
+                        <Link to={`/projectDetails/${internal}`}>
+                          <Icon name="External" />
+                        </Link>
                       )}
                       {external && !cta && (
                         <a href={external} aria-label="External Link" className="external">

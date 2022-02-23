@@ -2,7 +2,8 @@
 date: '2'
 title: 'COVID Response'
 cover: './swabs.png'
-external: 'https://spotify-profile.herokuapp.com/'
+external: ''
+internal: 'covidResponse'
 tech:
   - Water Jet
   - 3D Printing
