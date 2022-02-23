@@ -243,7 +243,8 @@ const CovidResponse = ({ location }) => {
                 <h2 className="numbered-heading1">Initial Design</h2>
                 <p>
                   We researched existing face shield plans, and our first prototype was a modified
-                  file from the open-source CAD website Thing-I-Verse. While the design was 3D
+                  file from the open-source CAD website{' '}
+                  <a href="https://www.thingiverse.com/">Thingiverse</a>. While the design was 3D
                   printable and lightweight, our stakeholders said it was extremely uncomfortable
                   due to the thin headband. Also, the 3D print's rough texture made the bands hard
                   to sanitize and easily breakable.
