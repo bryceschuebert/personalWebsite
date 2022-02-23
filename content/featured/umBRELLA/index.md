@@ -3,7 +3,7 @@ date: '1'
 title: 'umBRELLA'
 cover: './umbrellaProf.JPG'
 external: ''
-internal: ''
+internal: 'umbrella'
 tech:
   - Sharpr3D
   - Illustrator

@@ -123,6 +123,13 @@ const StyledProject = styled.li`
     font-weight: 400;
   }
 
+  .project-overline1 {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
   .project-title {
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
@@ -394,7 +401,7 @@ const Featured = () => {
                       )}
                       {internal && (
                         <Link to={`/projectDetails/${internal}`}>
-                          <Icon name="External" />
+                          <p className="project-overline1">READ MORE</p>
                         </Link>
                       )}
                       {external && !cta && (

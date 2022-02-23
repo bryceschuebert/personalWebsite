@@ -179,12 +179,12 @@ const CovidResponse = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Covid19" />
+      <Helmet title="umBRELLA" />
 
       <main>
         <header>
-          <h1 className="big-heading">COVID-19 Response</h1>
-          <p className="subtitle">March -- July 2020</p>
+          <h1 className="big-heading">umBRELLA</h1>
+          <p className="subtitle">March -- June 2021</p>
         </header>
 
         <StyledAboutSection id="about" ref={revealContainer}>
@@ -192,30 +192,17 @@ const CovidResponse = ({ location }) => {
             <StyledText>
               <div>
                 <p>
-                  In March 2020, COVID-19 shut down the University of Georgia (and the rest of the
-                  country) for the foreseeable future. All students and non-essential employees were
-                  sent home, and my fabrication team initially assumed we'd be going away as well.
-                  However, after Piedmont Athens Regional Medical Center desperately reached out for
-                  additional PPE supplies, we rushed to design and manufacture economical,
-                  comfortable, and practical face shields.
+                  My Design Methodologies course focused on the holistic design and system
+                  engineering process. My professor broke the class into 4-person groups to practice
+                  the ideation phase and instructed us to redesign an everyday item. We decided on
+                  an umbrella since there has been little variation in its' design in the past
+                  century. While the project ended after the ideation phase, I decided to create a
+                  CAD model of our design and practice using Keyshot to make realistic product
+                  representations.
                 </p>
               </div>
-            </StyledText>
-            <StyledPic>
-              <div className="wrapper">
-                <StaticImage
-                  className="img"
-                  src="../../../content/featured/Covid19/swabs.png"
-                  width={500}
-                  quality={95}
-                  formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="face shield prototype 1"
-                />
-              </div>
-            </StyledPic>
-            <StyledText>
               <div>
-                <h2 className="numbered-heading1">Requirements</h2>
+                <h2 className="numbered-heading1">Observation</h2>
                 <p>
                   To begin, we defined our requirements. Due to a country-wide supply shortage, the
                   face shield material had to be easily accessible, cheap, cleanable, and
@@ -227,7 +214,18 @@ const CovidResponse = ({ location }) => {
                 </p>
               </div>
             </StyledText>
-            <div></div>
+            <StyledPic>
+              <div className="wrapper">
+                <StaticImage
+                  className="img"
+                  src="../../images/projects/umbrella/1.JPG"
+                  width={500}
+                  quality={95}
+                  formats={['AUTO', 'WEBP', 'AVIF']}
+                  alt="Sticky notes sorted into groups"
+                />
+              </div>
+            </StyledPic>
             <StyledText>
               <div>
                 <h2 className="numbered-heading1">Initial Design</h2>
