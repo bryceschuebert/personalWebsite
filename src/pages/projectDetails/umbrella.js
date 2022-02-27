@@ -12,10 +12,23 @@ const StyledAboutSection = styled.section`
   max-width: 900px;
 
   .inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 20px;
+    display: block;
     counter-reset: my-sec-counter;
+  }
+
+  p {
+    margin: 1em;
+  }
+
+  .top-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    font-size: 1.1em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0 20px;
 
     @media (max-width: 768px) {
       display: block;
@@ -53,17 +66,11 @@ const StyledAboutSection = styled.section`
       display: block;
       position: relative;
       top: -5px;
-      width: 300px;
+      width: 100%;
       height: 1px;
       margin-left: 20px;
       background-color: var(--lightest-navy);
 
-      @media (max-width: 1080px) {
-        width: 200px;
-      }
-      @media (max-width: 768px) {
-        width: 100%;
-      }
       @media (max-width: 600px) {
         margin-left: 10px;
       }
@@ -71,51 +78,24 @@ const StyledAboutSection = styled.section`
   }
 `;
 
-const StyledText = styled.div`
-  ul.skills-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
-    padding: 0;
-    margin: 20px 0 0 0;
-    overflow: hidden;
-    list-style: none;
-
-    li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
-
-      &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--green);
-        font-size: var(--fz-sm);
-        line-height: 12px;
-      }
-    }
-  }
-`;
-
 const StyledPic = styled.div`
   position: relative;
-  max-width: 300px;
-  margin: 30px auto 50px;
+  max-width: 700px;
+  margin: 30px auto 30px;
 
-  @media (max-width: 768px) {
-    margin: 50px auto 50px;
-    width: 70%;
+  .img {
+    border-radius: var(--border-radius);
   }
 
-  .wrapper {
+  .top-img {
     ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+
+    @media (max-width: 768px) {
+      margin: 35px auto 55px;
+      width: 80%;
+    }
 
     &:hover,
     &:focus {
@@ -131,11 +111,6 @@ const StyledPic = styled.div`
         filter: none;
         mix-blend-mode: normal;
       }
-    }
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
     }
 
     &:before,
@@ -163,6 +138,21 @@ const StyledPic = styled.div`
       z-index: -1;
     }
   }
+
+  figcaption {
+    padding: 0.5em 0em 0.5em;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 3vw, var(--fz-md));
+    font-weight: 200;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
 `;
 
 const Umbrella = ({ location }) => {
@@ -189,11 +179,11 @@ const Umbrella = ({ location }) => {
 
         <StyledAboutSection id="about" ref={revealContainer}>
           <div className="inner">
-            <StyledText>
+            <div className="top-content">
               <div>
                 <p>
                   Last year, my Design Methodologies course focused on the holistic design and
-                  system engineering process. My professor broke the class into 4-person groups to
+                  system engineering process. The professor broke the class into 4-person groups to
                   practice the ideation phase and instructed us to redesign an everyday item. We
                   decided on an umbrella since there has been little variation in its' design in the
                   past century. While the project ended after the ideation phase, I decided to
@@ -201,118 +191,115 @@ const Umbrella = ({ location }) => {
                   product representations.
                 </p>
               </div>
-              <div>
-                <h2 className="numbered-heading1">Observation</h2>
-                <p>
-                  With limited access to stakeholders, we decided to use the Post-It note process to
-                  gather requirements. Every classmate received 5 Post-It notes and was instructed
-                  to write or sketch anything they wished an umbrella could do.
-                </p>
-              </div>
-            </StyledText>
+              <StyledPic>
+                <div className="top-img">
+                  <StaticImage
+                    className="img"
+                    src="../../images/projects/umbrella/1.JPG"
+                    width={800}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Sticky notes sorted into groups"
+                  />
+                </div>
+              </StyledPic>
+            </div>
+            <div>
+              <h2 className="numbered-heading1">Observation</h2>
+              <p>
+                With limited access to stakeholders, we decided to use the Post-It note process to
+                gather requirements. Every classmate received 5 Post-It notes and was instructed to
+                write or sketch anything they wished an umbrella could do.
+              </p>
+            </div>
+            <div>
+              <p>
+                After collecting the notes, we distilled the most common needs into functional and
+                non-functional requirements. Many of the notes indicated a demand for a more
+                intelligent, portable umbrella that could keep the user not only dry but safe.
+              </p>
+            </div>
+            <div></div>
             <StyledPic>
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/umbrella/1.JPG"
+                  src="../../images/projects/umbrella/2.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Sticky notes sorted into groups"
+                  alt="Sticky notes with observations"
                 />
+                <figcaption>Sticky notes with observations</figcaption>
               </div>
             </StyledPic>
-            <StyledText>
-              <div>
-                <p>
-                  After collecting the notes, we distilled the most common needs into functional and
-                  non-functional requirements. Many of the notes indicated a demand for a more
-                  intelligent, portable umbrella that could keep the user not only dry but safe.
-                </p>
-              </div>
-              <div></div>
+            <div></div>
+            <div>
+              <h2 className="numbered-heading1">Ideation</h2>
+              <p>
+                Since a weaponized umbrella is a bad idea for many reasons, we brainstormed designs
+                that focused on providing a safer, preventative experience. Most of the notes
+                suggested that users wanted an umbrella that provided illumination. Since that would
+                require energy, we considered further possibilities to take advantage of the power.
+                Many of the notes suggested including GPS, phone calls, and weather forecasts, but
+                implementing these required some form of input from the user. This input was tough
+                to design since portability was a top functional requirement.
+              </p>
+            </div>
+            <div>
               <StyledPic>
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../images/projects/umbrella/2.JPG"
+                    src="../../images/projects/umbrella/3.JPG"
                     width={500}
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="Sticky notes with observations"
+                    alt="Functional ideas"
                   />
+                  <figcaption>Functional ideas</figcaption>
                 </div>
               </StyledPic>
-            </StyledText>
-            <div></div>
-            <StyledText>
-              <div>
-                <h2 className="numbered-heading1">Ideation</h2>
-                <p>
-                  Since a weaponized umbrella is a bad idea for many reasons, we brainstormed
-                  designs that focused on providing a safer, preventative experience. Most of the
-                  notes suggested that users wanted an umbrella that provided illumination. Since
-                  that would require energy, we considered further possibilities to take advantage
-                  of the power. Many of the notes suggested including GPS, phone calls, and weather
-                  forecasts, but implementing these required some form of input from the user. This
-                  input was tough to design since portability was a top functional requirement.
-                </p>
-              </div>
-              <div>
-                <StyledPic>
-                  <div className="wrapper">
-                    <StaticImage
-                      className="img"
-                      src="../../images/projects/umbrella/3.JPG"
-                      width={500}
-                      quality={95}
-                      formats={['AUTO', 'WEBP', 'AVIF']}
-                      alt="Functional ideas"
-                    />
-                  </div>
-                </StyledPic>
-              </div>
-              <div>
-                <p>
-                  Taking inspiration from the original iPod, I sketched a glass scroll wheel with a
-                  circular screen underneath that would sit on top of the umbrella handle. To
-                  prevent unwanted feedback, the wheel would not be touch-sensitive; instead, users
-                  could use their thumb to move the glass wheel left or right and press down for
-                  input. Users could easily see incoming notifications from their phones with just
-                  one hand.
-                </p>
-              </div>
-              <div>
-                <StyledPic>
-                  <div className="wrapper">
-                    <StaticImage
-                      className="img"
-                      src="../../images/projects/umbrella/4.JPG"
-                      width={500}
-                      quality={95}
-                      formats={['AUTO', 'WEBP', 'AVIF']}
-                      alt="Procreate sketch of the scroll wheel"
-                    />
-                  </div>
-                </StyledPic>
-              </div>
-              <div>
-                <p>
-                  Our final design remained portable and included the scroll wheel, an LED light
-                  around the brim, a flashlight in the base.
-                </p>
-              </div>
-              <div>
-                <h2 className="numbered-heading1">Model Representation</h2>
-                <p>
-                  With the project complete, I decided to try out Sharpr3D to create a CAD umbrella
-                  model. I imported the model components into Keyshot 10 and added color, texture,
-                  and lighting to create a realistic visual. I used Illustrator to create a simple
-                  scroll wheel app illustration and added emissive illumination to provide an OLED
-                  effect.
-                </p>
-              </div>
-            </StyledText>
+            </div>
+            <div>
+              <p>
+                Taking inspiration from the original iPod, I sketched a glass scroll wheel with a
+                circular screen underneath that would sit on top of the umbrella handle. To prevent
+                unwanted feedback, the wheel would not be touch-sensitive; instead, users could use
+                their thumb to move the glass wheel left or right and press down for input. Users
+                could easily see incoming notifications from their phones with just one hand.
+              </p>
+            </div>
+            <div>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../images/projects/umbrella/4.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Procreate sketch of the scroll wheel"
+                  />
+                  <figcaption>Procreate sketch of the scroll wheel</figcaption>
+                </div>
+              </StyledPic>
+            </div>
+            <div>
+              <p>
+                Our final design remained portable and included the scroll wheel, an LED light
+                around the brim, a flashlight in the base.
+              </p>
+            </div>
+            <div>
+              <h2 className="numbered-heading1">Model Representation</h2>
+              <p>
+                With the project complete, I decided to try out Sharpr3D to create a CAD umbrella
+                model. I imported the model components into Keyshot 10 and added color, texture, and
+                lighting to create a realistic visual. I used Illustrator to create a simple scroll
+                wheel app illustration and added emissive illumination to provide an OLED effect.
+              </p>
+            </div>
             <div></div>
             <StyledPic>
               <div className="wrapper">
@@ -322,8 +309,9 @@ const Umbrella = ({ location }) => {
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
-                  alt="Procreate sketch of the scroll wheel"
+                  alt="Keyshot 10 Rendering of the scroll wheel"
                 />
+                <figcaption>Keyshot 10 Rendering of the scroll wheel</figcaption>
               </div>
             </StyledPic>
           </div>
