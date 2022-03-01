@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import { srConfig } from '@config';
+import { srConfigDetails } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
@@ -164,7 +164,7 @@ const CovidResponse = ({ location }) => {
       return;
     }
 
-    sr.reveal(revealContainer.current, srConfig());
+    sr.reveal(revealContainer.current, srConfigDetails());
   }, []);
 
   return (
