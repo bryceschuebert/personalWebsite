@@ -3,6 +3,7 @@ date: '2021-04-01'
 title: 'USMA Social Lead'
 github: ''
 external: ''
+internal: 'usma'
 tech:
   - Illustrator
   - Photoshop

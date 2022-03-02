@@ -3,6 +3,7 @@ date: '2020-04-01'
 title: 'Caterpillar Mini-Excavator Training'
 github: ''
 external: 'https://youtu.be/xfoMZO4r-is'
+internal: ''
 tech:
   - Illustrator
   - Premiere Pro

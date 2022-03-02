@@ -27,7 +27,7 @@ const StyledAboutSection = styled.section`
     top: -5px;
     width: 55%;
     height: 1px;
-    margin: auto;
+    margin: 20px auto 20px;
     background-color: var(--lightest-navy);
   }
 
@@ -242,7 +242,7 @@ const Creature = ({ location }) => {
                 in <a href="https://www.shapr3d.com/">Shapr3D</a>. I immediately decided that a
                 little Creature Comforts would be a fun challenge to turn into a working library.
                 Instead of hinged doors, I created two functional garage doors big enough to fit 20
-                books. The doors would use ball bearings on 3D-printed tracks. The door would be
+                books. The doors would use ball bearings on 3D-printed tracks. The doors would be
                 clear acrylic, cut to size with the{' '}
                 <a href="https://www.bosslaser.com/laser-machines/boss-ls-3655">Boss Laser</a>. The
                 exterior would be two sheets of 25 mm thick sanded pine wood, and after getting it
@@ -262,14 +262,13 @@ const Creature = ({ location }) => {
                   formats={['AUTO', 'WEBP', 'AVIF']}
                   alt="Bryce in front of blueprint"
                 />
-                <figcaption>Bryce in front of his submission</figcaption>
+                <figcaption>Bryce in front of the final submission: Little Creature</figcaption>
               </div>
             </StyledPic>
             <div>
               <p>
-                Our design made it to the final competition and was judged by the community and a
-                panel of Creature employees. While we didn't win, working with other local artists
-                was really fun!
+                Our design made it to the final round and was judged by the community and a panel of
+                Creature employees. It was an honor to be judged next to such incredible entries!
               </p>
             </div>
           </div>

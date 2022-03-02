@@ -3,6 +3,7 @@ date: '2018-06-01'
 title: 'UGA Summer Academy'
 github: ''
 external: ''
+internal: ''
 tech:
   - Teaching
   - Project Development

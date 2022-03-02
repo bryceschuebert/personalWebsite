@@ -143,29 +143,28 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I’m Bryce—a mechanical engineer with a passion for designing and developing
+              Hello! I’m Bryce—a mechanical engineer passionate about designing and developing
               human-centered products.
             </p>
 
             <p>
-              As a full-time second-year undergrad student, I am aware of the barriers many students
-              faced in applying textbook knowledge to practical projects. In response, I helped
-              launch the{' '}
+              As a full-time second-year undergrad student, I was aware of many students' barriers
+              in applying textbook knowledge to practical projects. In response, I helped launch the{' '}
               <a href="https://www.engineering.uga.edu/fablab">
                 University of Georgia Student Fabrication Lab
               </a>
               , retro-fitting an outdated lab with cutting-edge technology. Utilizing my fabrication
-              experience, I drafted a safety curriculum and project so novice students could
-              confidently operate complex machinery. Find out more about other projects from the
-              fabrication lab in the work section!
+              experience, I drafted a safety curriculum with interactive projects so novice students
+              could confidently operate complex machinery. Check out the work section below for all
+              of my fabrication lab projects!
             </p>
 
             <p>
-              Post undergrad, I sought a deeper understanding of manufacturing design process and
-              joined the MODE2L (Manufacturing Optimization, Design, and Engineering Education Lab)
-              Group as a research assistant. I optimized a master’s class schedule compounding the
-              formal design and system engineering process so my fabrication experience enhanced my
-              ability to create sustainable, inclusive products.
+              Post undergrad, I sought a deeper understanding of the manufacturing design process
+              and joined the MODE2L (Manufacturing Optimization, Design, and Engineering Education
+              Lab) Group as a research assistant. I optimized a master’s class schedule compounding
+              the formal design and system engineering process to enhance my ability to create
+              sustainable, inclusive products.
             </p>
 
             <p>

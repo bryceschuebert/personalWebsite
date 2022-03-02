@@ -3,6 +3,7 @@ date: '2020-11-01'
 title: 'Curo'
 github: ''
 external: ''
+internal: ''
 tech:
   - Illustrator
   - Photoshop

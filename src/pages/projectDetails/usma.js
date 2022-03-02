@@ -182,12 +182,17 @@ const CovidResponse = ({ location }) => {
             <div className="top-content">
               <div>
                 <p>
-                  In March 2020, COVID-19 shut down the University of Georgia (and the rest of the
-                  country) for the foreseeable future. All students and non-essential employees were
-                  sent home, and my fabrication team initially assumed we'd be going away as well.
-                  However, after Piedmont Athens Regional Medical Center desperately reached out for
-                  additional PPE supplies, we rushed to design and manufacture economical,
-                  comfortable, and practical face shields.
+                  Throughout undergrad, every engineering class emphasized the importance of knowing
+                  both the metric and imperial system, with most exams having at least one trick
+                  unit question. I quickly recognized that unit-switching is ridiculous,
+                  inefficient, and outright dangerous, but dual units are deeply ingrained into
+                  American culture. I researched the US's metrification history in grad school to
+                  understand how we fell behind and found the United States Metric Association.
+                  Founded in 1916, the organization had been instrumental in the Metric Conversion
+                  Act of 1975 but appeared to have lost steam over the last few decades. With no
+                  social presence, I reached out and offered to apply my Illustrator skills to craft
+                  posts to promote the metric system. Below are a variety of social posts, along
+                  with my thought processes.
                 </p>
               </div>
               <StyledPic>
