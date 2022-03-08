@@ -47,6 +47,7 @@ const StyledProject = styled.li`
   position: relative;
   cursor: default;
   transition: var(--transition);
+  pointer-events: none;
 
   @media (prefers-reduced-motion: no-preference) {
     &:hover,
@@ -92,22 +93,15 @@ const StyledProject = styled.li`
       align-items: center;
       margin-right: -10px;
       color: var(--light-slate);
+      pointer-events: auto;
 
       a {
         ${({ theme }) => theme.mixins.flexCenter};
         padding: 5px 7px;
-
-        &.external {
-          svg {
-            width: 22px;
-            height: 22px;
-            margin-top: -4px;
-          }
-        }
-
         svg {
-          width: 20px;
-          height: 20px;
+          width: 22px;
+          height: 22px;
+          margin-top: -4px;
         }
       }
     }
@@ -137,6 +131,7 @@ const StyledProject = styled.li`
   .project-description {
     color: var(--light-slate);
     font-size: 17px;
+    pointer-events: auto;
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
@@ -230,7 +225,7 @@ const Projects = () => {
               )}
               {internal && (
                 <Link to={`/projectDetails/${internal}`}>
-                  <Icon name="External" />
+                  <Icon name="Internal" />
                 </Link>
               )}
               {external && (
