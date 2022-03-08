@@ -3,9 +3,10 @@ date: '2018-10-01'
 title: 'Fish Tank Build'
 github: ''
 external: ''
-internal: ''
+internal: 'fishTank'
 tech:
   - Woodworking
+  - Laser cutting
 company: ''
 showInProjects: true
 ---
