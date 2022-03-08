@@ -205,7 +205,7 @@ const scanning = ({ location }) => {
                 <div className="top-img">
                   <StaticImage
                     className="img"
-                    src="../../images/projects/3dScanning/3.JPG"
+                    src="../../images/projects/scanning/3.JPG"
                     width={500}
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
@@ -226,7 +226,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/3dscanning/11.JPG"
+                  src="../../images/projects/scanning/11.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -247,7 +247,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/3dscanning/2.JPG"
+                  src="../../images/projects/scanning/2.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -267,7 +267,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/3dscanning/1.JPG"
+                  src="../../images/projects/scanning/1.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -287,7 +287,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/3dscanning/4.jpeg"
+                  src="../../images/projects/scanning/4.jpeg"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
