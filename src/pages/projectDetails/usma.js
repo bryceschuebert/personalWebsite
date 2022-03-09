@@ -336,7 +336,6 @@ const CovidResponse = ({ location }) => {
 };
 CovidResponse.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default CovidResponse;

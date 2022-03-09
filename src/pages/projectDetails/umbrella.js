@@ -324,7 +324,6 @@ const Umbrella = ({ location }) => {
 };
 Umbrella.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default Umbrella;

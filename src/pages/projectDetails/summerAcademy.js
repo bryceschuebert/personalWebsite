@@ -166,7 +166,7 @@ const StyledPic = styled.div`
   }
 `;
 
-const scanning = ({ location }) => {
+const SummerAcademy = ({ location }) => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -180,11 +180,11 @@ const scanning = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="3D Scanning" />
+      <Helmet title="Summer Academy" />
 
       <main>
         <header>
-          <h1 className="big-heading">3D Scanning</h1>
+          <h1 className="big-heading">UGA Summer Academy</h1>
           <p className="subtitle">January -- July 2020</p>
         </header>
 
@@ -205,7 +205,7 @@ const scanning = ({ location }) => {
                 <div className="top-img">
                   <StaticImage
                     className="img"
-                    src="../../images/projects/scanning/3.JPG"
+                    src="../../images/projects/summercamp/3.JPG"
                     width={500}
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
@@ -217,16 +217,16 @@ const scanning = ({ location }) => {
             <div className="line-seperator"></div>
             <div>
               <p>
-                After scanning an object, post-processing occurs in Artec Studio, where multiple
-                scans are combined. Any inclusions are fixed, and a final CAD model is ready for
-                export.
+                After SummerAcademy an object, post-processing occurs in Artec Studio, where
+                multiple scans are combined. Any inclusions are fixed, and a final CAD model is
+                ready for export.
               </p>
             </div>
             <StyledPic>
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/scanning/11.JPG"
+                  src="../../images/projects/summercamp/11.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -247,7 +247,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/scanning/2.JPG"
+                  src="../../images/projects/summercamp/2.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -267,7 +267,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/scanning/1.JPG"
+                  src="../../images/projects/summercamp/1.JPG"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -287,7 +287,7 @@ const scanning = ({ location }) => {
               <div className="wrapper">
                 <StaticImage
                   className="img"
-                  src="../../images/projects/scanning/4.jpeg"
+                  src="../../images/projects/summercamp/4.jpeg"
                   width={500}
                   quality={95}
                   formats={['AUTO', 'WEBP', 'AVIF']}
@@ -302,9 +302,8 @@ const scanning = ({ location }) => {
     </Layout>
   );
 };
-scanning.propTypes = {
+SummerAcademy.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
-export default scanning;
+export default SummerAcademy;

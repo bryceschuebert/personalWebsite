@@ -304,7 +304,6 @@ const scanning = ({ location }) => {
 };
 scanning.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default scanning;

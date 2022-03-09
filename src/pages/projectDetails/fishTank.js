@@ -346,7 +346,6 @@ const FishTank = ({ location }) => {
 };
 FishTank.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default FishTank;

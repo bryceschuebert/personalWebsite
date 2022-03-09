@@ -279,7 +279,6 @@ const Creature = ({ location }) => {
 };
 Creature.propTypes = {
   location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default Creature;
