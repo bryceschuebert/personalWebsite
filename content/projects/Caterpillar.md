@@ -4,6 +4,8 @@ title: 'Caterpillar Mini-Excavator Training'
 github: ''
 external: 'https://youtu.be/xfoMZO4r-is'
 internal: ''
+videoSourceURL: ''
+videoTitle: ''
 tech:
   - Illustrator
   - Premiere Pro

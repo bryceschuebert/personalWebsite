@@ -4,6 +4,8 @@ title: '3D Scanning'
 github: ''
 external: ''
 internal: 'scanning'
+videoSourceURL: ''
+videoTitle: ''
 tech:
   - Artec Studio
 company: ''

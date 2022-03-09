@@ -4,6 +4,8 @@ title: 'USMA Social Lead'
 github: ''
 external: ''
 internal: 'usma'
+videoSourceURL: ''
+videoTitle: ''
 tech:
   - Illustrator
   - Photoshop

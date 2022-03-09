@@ -177,6 +177,8 @@ const Projects = () => {
               github
               external
               internal
+              videoSourceURL
+              videoTitle
             }
             html
           }

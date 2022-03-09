@@ -4,6 +4,8 @@ title: 'Fish Tank Build'
 github: ''
 external: ''
 internal: 'fishTank'
+videoSourceURL: ''
+videoTitle: ''
 tech:
   - Woodworking
   - Laser cutting
