@@ -8,6 +8,7 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -177,7 +178,8 @@ const Nav = ({ isHome }) => {
       className="resume-button"
       href="/Bryce_Schuebert_PD_Spring2022.pdf"
       target="_blank"
-      rel="noopener noreferrer">
+      rel="noopener noreferrer"
+    >
       Resume
     </a>
   );
@@ -194,7 +196,7 @@ const Nav = ({ isHome }) => {
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      <Link to={url}>{name}</Link>
+                      <AnchorLink to={url}>{name}</AnchorLink>
                     </li>
                   ))}
               </ol>
