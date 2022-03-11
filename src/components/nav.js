@@ -8,7 +8,6 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -196,7 +195,7 @@ const Nav = ({ isHome }) => {
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      <AnchorLink to={url}>{name}</AnchorLink>
+                      <Link to={url}>{name}</Link>
                     </li>
                   ))}
               </ol>
