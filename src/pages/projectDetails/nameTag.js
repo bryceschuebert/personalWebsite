@@ -342,7 +342,7 @@ const NameTag = ({ location }) => {
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/nametag/2.JPG"
+                    src="../../../src/images/projects/nametag/2.jpg"
                     width={500}
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
@@ -351,6 +351,7 @@ const NameTag = ({ location }) => {
                   <figcaption>Dominique with her plaque</figcaption>
                 </div>
               </StyledPic>
+              <p>The final product turned out nicely, and Dominique was a big fan!</p>
             </div>
           </div>
         </StyledAboutSection>
