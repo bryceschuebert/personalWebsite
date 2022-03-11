@@ -30,7 +30,6 @@ const StyledAboutSection = styled.section`
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0px 0 20px;
 
     @media (max-width: 768px) {
       display: block;
@@ -233,11 +232,11 @@ const NameTag = ({ location }) => {
               <h2 className="numbered-heading1">Plaque Design</h2>
               <p>
                 The first step was to decide on the plaque size, font, font size, and placement. The
-                stainless steel sheet was large at 300 mm x 300 mm steel, so I decided to crop a
-                rectangle closer to standard desk plaques: 180 mm x 100 mm. Then, I created an
-                artboard of the same size in Illustrator and trimmed the kickstand section off. This
-                approach makes lining up the laser incredibly easy. I chose a large sans font for
-                her name and then used italics for the title.
+                raw 2 mm stainless steel sheet was 300 mm x 300 mm and needed to be cut down to the
+                standard desk plaque size of 180 mm x 100 mm. Then, I created an artboard of the
+                same dimensions in Illustrator and trimmed the kickstand section off. This approach
+                makes lining up the laser incredibly easy. I chose a large sans font for her name
+                and then used italics for the title.
               </p>
             </div>
             <StyledPic>
@@ -250,7 +249,7 @@ const NameTag = ({ location }) => {
                   formats={['AUTO', 'WEBP', 'AVIF']}
                   alt="illustrator layout of the plaque text"
                 />
-                <figcaption>Layout of the plaque text</figcaption>
+                <figcaption>Layout of the plaque text in Illustrator</figcaption>
               </div>
             </StyledPic>
             <div>
@@ -277,17 +276,17 @@ const NameTag = ({ location }) => {
                 With the file in hand, I powered up the{' '}
                 <a href="https://www.protomax.com/">ProtoMAX</a> waterjet, checked the garnet levels
                 (abrasive grain), and reproduced the desired rectangle in the OMAX software. The
-                machine quickly cut out the metal, and I used the belt sander to take off any sharp
+                machine quickly cut out the metal, and I used a belt sander to take off any sharp
                 edges/burrs.
               </p>
             </div>
             <div>
-              <h2 className="numbered-heading1">BossLaser</h2>
+              <h2 className="numbered-heading1">Laser Etching</h2>
               <p>
-                I sprayed the rectangular metal surface with etching spray, which lets the laser
-                penetrate the reflective surface. Still, the laser's engraving speed had to be
-                slowed to crawl, and the power turned to almost 100 percent; otherwise, it wouldn't
-                have enough time or energy to leave a mark.
+                RDWorks, the BossLaser software, readily imports .ai files while preserving the
+                proper dimensions. I selected the letters to be etched, and since the rectangle was
+                already cut out, I turned the laser cutting mode off. However, I kept the bounding
+                box layer on to keep the alignment of the rectangle with the laser head convenient.
               </p>
               <StyledPic>
                 <div className="wrapper">
@@ -299,16 +298,59 @@ const NameTag = ({ location }) => {
                     formats={['AUTO', 'WEBP', 'AVIF']}
                     alt="waterjet metal cut out"
                   />
-                  <figcaption>Cut out rectangle still in the waterjet</figcaption>
+                  <figcaption>
+                    Design after import into RDWorks with the letters selected for etching
+                  </figcaption>
                 </div>
               </StyledPic>
+              <p>
+                I sprayed the rectangular metal surface with etching spray, which allows the laser
+                to penetrate the reflective surface. Still, the laser's engraving speed had to be
+                slowed down, and the power turned up to almost 100 percent; otherwise, it wouldn't
+                have enough time or energy to leave a mark.
+              </p>
+              <div className="vid-div">
+                <Video
+                  videoSrcURL="https://www.youtube.com/embed/6MpQkiiMEqQ?autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3&playlist=6MpQkiiMEqQ"
+                  videoTitle="Nique's Name Laser-etched"
+                />
+                <vidcaption>Timelapse of Laser Etching</vidcaption>
+              </div>
             </div>
-            <div className="vid-div">
-              <Video
-                videoSrcURL="https://www.youtube.com/embed/6MpQkiiMEqQ?autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3&playlist=6MpQkiiMEqQ"
-                videoTitle="Nique's Name Laser-etched"
-              />
-              <vidcaption>Timelapse of Laser Etching</vidcaption>
+            <div>
+              <h2 className="numbered-heading1">Metal Bending</h2>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/nametag/6.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="plaque in the metal brake"
+                  />
+                  <figcaption>The plaque placed in the sheet metal brake</figcaption>
+                </div>
+              </StyledPic>
+              <p>
+                After wiping off the marking spray residue, the last step was to bend the plate into
+                the kickstand. The sheet metal brake already had 25 mm fingers installed, and since
+                that was a sufficient radius for the plaque's gauge to avoid cracking, I used the
+                existing fingers to bend the plate to its final form.
+              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/nametag/2.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Dominique holding her plaque"
+                  />
+                  <figcaption>Dominique with her plaque</figcaption>
+                </div>
+              </StyledPic>
             </div>
           </div>
         </StyledAboutSection>
