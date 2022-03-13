@@ -31,6 +31,7 @@
     ]
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "animejs": "^3.2.1",
     "babel-plugin-styled-components": "^2.0.6",
     "gatsby": "^4.9.3",

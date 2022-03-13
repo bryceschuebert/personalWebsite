@@ -3,7 +3,7 @@ date: '2020-07-20'
 title: 'Name Plaque'
 github: ''
 external: ''
-internal: 'nameTag'
+internal: 'name-tag'
 videoSourceURL: https://www.youtube.com/embed/dQw4w9WgXcQ
 videoTitle: 'Bosslaser etching stainless steel'
 tech:

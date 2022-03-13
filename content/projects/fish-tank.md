@@ -3,7 +3,7 @@ date: '2018-10-01'
 title: 'Fish Tank Build'
 github: ''
 external: ''
-internal: 'fishTank'
+internal: 'fish-tank'
 videoSourceURL: ''
 videoTitle: ''
 tech:

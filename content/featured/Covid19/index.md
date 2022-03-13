@@ -3,7 +3,7 @@ date: '2'
 title: 'COVID Response'
 cover: './swabs.png'
 external: ''
-internal: 'covidResponse'
+internal: 'covid-response'
 tech:
   - Water Jet
   - 3D Printing
