@@ -6,23 +6,32 @@ import PropTypes from 'prop-types';
 //https://juliapottinger.com/react-gatsby-scroll-to-top/
 
 const IconButton = styled.button`
-    ${({ theme }) => theme.mixins.smallButton};
     position: fixed;
     z-index: 2;
     padding: 15px;
-    bottom: 2.5vh;
+    bottom: 2.8vh;
     right: 18%;
-    border-radius: 35px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid var(--green);
+    transition: var(--transition);
+    
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--green-tint);
+      outline: none;
+    }
 
   @media (max-width: 1200px) {
-    bottom: 2.5vh;
+    bottom: 2.8vh;
     right: 7%;
     background-color: var(--dark-navy);
     opacity: .8;
   }
 
   @media (max-width: 768px) {
-    bottom: 2.5vh;
+    bottom: 2.8vh;
     right: 5%;
     background-color: var(--dark-navy);
   }
@@ -35,9 +44,13 @@ const Scroll = ({ showBelow }) => {
 
   const handleScroll = () => {
     if (window.pageYOffset > showBelow) {
-      if (!show) {setShow(true);}
+      if (!show) {
+        setShow(true);
+      }
     } else {
-      if (show) {setShow(false);}
+      if (show) {
+        setShow(false);
+      }
     }
   };
 
@@ -55,9 +68,11 @@ const Scroll = ({ showBelow }) => {
   return (
     <div>
       {show && (
-        <IconButton onClick={handleClick} component="span">
-          <MdExpandLess color="var(--green)" size={30} />
-        </IconButton>
+        <div>
+          <IconButton onClick={handleClick} component="span">
+            <MdExpandLess color="var(--green)" size="40px" />
+          </IconButton>
+        </div>
       )}
     </div>
   );
@@ -66,4 +81,5 @@ const Scroll = ({ showBelow }) => {
 Scroll.propTypes = {
   showBelow: PropTypes.string.isRequired,
 };
+
 export default Scroll;
