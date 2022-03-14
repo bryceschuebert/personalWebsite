@@ -69,7 +69,7 @@ const Scroll = ({ showBelow }) => {
     <div>
       {show && (
         <div>
-          <IconButton onClick={handleClick} component="span">
+          <IconButton onClick={handleClick}>
             <MdExpandLess color="var(--green)" size="40px" />
           </IconButton>
         </div>
