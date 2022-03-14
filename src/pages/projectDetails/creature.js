@@ -7,7 +7,6 @@ import { srConfigDetails } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
-import Scroll from '../../components/scroll';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -275,7 +274,6 @@ const Creature = ({ location }) => {
           </div>
         </StyledAboutSection>
       </main>
-      <Scroll showBelow="300" />
     </Layout>
   );
 };

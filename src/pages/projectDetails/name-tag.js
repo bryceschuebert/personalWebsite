@@ -7,7 +7,7 @@ import { srConfigDetails } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
-import Scroll from '../../components/scroll';
+
 import Video from '../../components/video';
 
 const StyledAboutSection = styled.section`
@@ -355,7 +355,6 @@ const NameTag = ({ location }) => {
             </div>
           </div>
         </StyledAboutSection>
-        <Scroll showBelow="300" />
       </main>
     </Layout>
   );

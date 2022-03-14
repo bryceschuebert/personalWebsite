@@ -7,7 +7,6 @@ import { srConfigDetails } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
-import Scroll from '../../components/scroll';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -331,7 +330,6 @@ const CovidResponse = ({ location }) => {
             </div>
           </div>
         </StyledAboutSection>
-        <Scroll showBelow="300" />
       </main>
     </Layout>
   );

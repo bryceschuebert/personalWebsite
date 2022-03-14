@@ -10,30 +10,32 @@ const IconButton = styled.button`
     z-index: 2;
     padding: 15px;
     bottom: 2.8vh;
-    right: 18%;
+    right: 15%;
     border-radius: 40px;
     background-color: transparent;
     border: 2px solid var(--green);
     transition: var(--transition);
     
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       background-color: var(--green-tint);
       outline: none;
+    }
+
+    &:active {
+      background-color: var(--blue);
     }
 
   @media (max-width: 1200px) {
     bottom: 2.8vh;
     right: 7%;
     background-color: var(--dark-navy);
-    opacity: .8;
+    opacity: .75;
   }
 
   @media (max-width: 768px) {
     bottom: 2.8vh;
     right: 5%;
-    background-color: var(--dark-navy);
   }
 
   }
