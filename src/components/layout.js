@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
-import Scroll from '../components/scroll';
 
 const StyledContent = styled.div`
   display: flex;
@@ -68,7 +67,6 @@ const Layout = ({ children, location }) => {
               <Email isHome={isHome} />
 
               <div id="content">
-                <Scroll showBelow="250" />
                 {children}
                 <Footer />
               </div>
