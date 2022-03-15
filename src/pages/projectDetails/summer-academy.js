@@ -279,7 +279,7 @@ const SummerAcademy = ({ location }) => {
                     formats={['AUTO', 'WEBP', 'AVIF']}
                     alt="Water bucket filling from hose"
                   />
-                  <figcaption>A 5-gallon bucket being filled up</figcaption>
+                  <figcaption>The 5-gallon contraption being tested before use</figcaption>
                 </div>
               </StyledPic>
               <p>
@@ -301,6 +301,55 @@ const SummerAcademy = ({ location }) => {
                   <figcaption>A student working on the drivetrain platform</figcaption>
                 </div>
               </StyledPic>
+              <p>
+                The other group devised a method of converting a bike's rotational energy into
+                hydraulic energy via a 3D-printed wheel attached to the drive train rod. This
+                objective was more difficult than intended. The students (and instructors) struggled
+                to fabricate a platform that kept the bike wheel steady and firmly placed onto the
+                wheel.
+              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/summercamp/10.JPG"
+                    width={600}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="A student positioning a 3D printed wheel behind a bike"
+                  />
+                  <figcaption>
+                    A student calculating the necessary distance between wheels
+                  </figcaption>
+                </div>
+              </StyledPic>
+              <p>
+                With too much pressure, the wheel melted from friction after a few revolutions, and
+                too little pressure wouldn't spin the 3D print at all. Eventually, the students
+                switched to a grooved wooden wheel, and with both teams ready, the final half-day
+                focused on the competition.
+              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/summercamp/3.JPG"
+                    width={600}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="Bike spinning on drivetrain"
+                  />
+                  <figcaption>
+                    Students using a motor to calculate the power output of the bike
+                  </figcaption>
+                </div>
+              </StyledPic>
+              <p>
+                Comparing the power output of both, most expected the battery team to win. However,
+                one of the students went insanely hard on the bike, almost winning the competition
+                and nearly passing out. Each week, we tinkered with the curriculum based on student
+                feedback, and overall, it was a great learning experience for all involved.
+              </p>
             </div>
           </div>
         </StyledAboutSection>
