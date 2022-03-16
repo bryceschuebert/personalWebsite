@@ -11,6 +11,7 @@ tech:
   - Premiere Pro
 company: 'UGA Fabrication Lab'
 showInProjects: true
+showInArchive: true
 ---
 
 Caterpillar gifted the College of Engineering with a 303.5 Mini Excavator, and I created a simple training video to show students how to safely operate the machine.

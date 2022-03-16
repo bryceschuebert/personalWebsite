@@ -148,8 +148,8 @@ const About = () => {
             </p>
 
             <p>
-              As a full-time second-year undergrad student, I was aware of many students' barriers
-              in applying textbook knowledge to practical projects. In response, I helped launch the{' '}
+              As a full-time second-year undergrad student, I knew of many students' barriers in
+              applying textbook knowledge to practical projects. In response, I helped launch the{' '}
               <a href="https://www.engineering.uga.edu/fablab">
                 University of Georgia Student Fabrication Lab
               </a>
@@ -162,9 +162,9 @@ const About = () => {
             <p>
               Post undergrad, I sought a deeper understanding of the manufacturing design process
               and joined the MODE2L (Manufacturing Optimization, Design, and Engineering Education
-              Lab) Group as a research assistant. I optimized a master’s class schedule compounding
+              Lab) Group as a research assistant. I optimized a master’s class schedule combining
               the formal design and system engineering process to enhance my ability to create
-              sustainable, inclusive products.
+              sustainable and inclusive products.
             </p>
 
             <p>
@@ -174,7 +174,7 @@ const About = () => {
               </a>
               , where I learned C and further refined my working knowledge of Python, SQL, and
               Flask. Beyond that, I enjoy trying new foods with friends, running long distances, and
-              hanging out with my cats Blue & Nugget.
+              hanging out with my cats, Blue & Nugget.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

@@ -13,6 +13,7 @@ tech:
   - Asana
 company: ''
 showInProjects: false
+showInArchive: false
 ---
 
 After Instagram launched the Shop page, the platform felt like it had completely ditched the user experience for ad revenue. I designed a competitor concept that curated to the user.
