@@ -157,6 +157,13 @@ const StyledProject = styled.li`
       }
     }
   }
+
+  .project-overline1 {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
 `;
 
 const Projects = () => {
@@ -227,7 +234,7 @@ const Projects = () => {
               )}
               {internal && (
                 <Link to={`/projectDetails/${internal}`}>
-                  <Icon name="Internal" />
+                  <p className="project-overline1">READ MORE</p>
                 </Link>
               )}
               {external && (
@@ -236,7 +243,8 @@ const Projects = () => {
                   aria-label="External Link"
                   className="external"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   <Icon name="External" />
                 </a>
               )}
@@ -289,13 +297,15 @@ const Projects = () => {
                   key={i}
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
+                  exit={false}
+                >
                   <StyledProject
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
                     style={{
                       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
+                    }}
+                  >
                     {projectInner(node)}
                   </StyledProject>
                 </CSSTransition>

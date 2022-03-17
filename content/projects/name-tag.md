@@ -16,4 +16,4 @@ showInProjects: true
 showInArchive: true
 ---
 
-I wanted to gift my partner, [Dominique Roth](https://niqueroth.com/), a plaque for her desk with her name and occupation. My original goal was to test out the BossLaser's metal etching capabilities. However, the process required three separate machines to go from a stainless steel sheet to the finished product.
+I wanted to gift my partner, [Dominique Roth](https://niqueroth.com/), a plaque for her desk with her name and occupation. The process required three separate machines to go from a stainless steel sheet to the finished product.

@@ -169,7 +169,7 @@ const CovidResponse = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <Helmet title="Covid19" />
+      <Helmet title="USMA" />
 
       <main>
         <header>
