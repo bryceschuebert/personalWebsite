@@ -181,7 +181,7 @@ const StyledPic = styled.div`
   }
 `;
 
-const SummerAcademy = ({ location }) => {
+const Printing = ({ location }) => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -223,11 +223,14 @@ const SummerAcademy = ({ location }) => {
             <div className="top-content">
               <div>
                 <p>
-                  Every summer, the College of Engineering hosts the engineering-focused classes
-                  from the UGA Summer Camp. The fabrication lab team's job was to formulate an
-                  experiential curriculum around a specific engineering topic short enough to be
-                  completed in a week. The curriculum was adjusted according to class level, ranging
-                  from middle to high school.
+                  When I started working at the Fabrication Lab, there were just two Taz6 3D
+                  printers. Part of my job description was to{' '}
+                  <q>set up, manage, and instruct students on how to use 3D printers</q>, and with
+                  no prior experience, I had to quickly learn everything about the 3D printing
+                  process. Fortunately, students broke the Taz's every other day, so there were
+                  plenty of learning opportunities. Over <b>sixteen</b> various 3D printers were
+                  running full-time by the time I left. Now, as a graduate assistant, I am still
+                  maintaining four printers. Here is a full list of printers I've worked with:
                 </p>
                 <ul className="printer-list">
                   {printers && printers.map((skill, i) => <li key={i}>{skill}</li>)}
@@ -253,16 +256,19 @@ const SummerAcademy = ({ location }) => {
                 covered for half of each day, and by the week's end, the concepts and projects
                 merged.
               </p>
-              <p>
-                The pump section covered the essential inner workings (volute casing, flow rate,
-                pumps don't suck liquids, etc.), and then groups of students had to develop, 3D
-                print, and assemble their pumps. To design the pump body, each group followed along
-                as we taught the basics of AutoCAD, and within two hours, the pump drawings were 3D
-                models, ready to print. Assembly was the most challenging part since creating a
-                working seal with 3D parts is nearly impossible. While rubber gaskets were used, we
-                didn't anticipate that the 3D prints would &apos;sweat&apos; water under pressure.
-                Each part was sprayed with a sealant that worked well enough to fix the sweating.
-              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/printing/4.JPG"
+                    width={500}
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="A student soldering"
+                  />
+                  <figcaption>A student safely soldering wires to the battery casing</figcaption>
+                </div>
+              </StyledPic>
             </div>
             <div>
               <h2 className="numbered-heading1">Stereolithography</h2>
@@ -402,8 +408,8 @@ const SummerAcademy = ({ location }) => {
     </Layout>
   );
 };
-SummerAcademy.propTypes = {
+Printing.propTypes = {
   location: PropTypes.object.isRequired,
 };
 
-export default SummerAcademy;
+export default Printing;
