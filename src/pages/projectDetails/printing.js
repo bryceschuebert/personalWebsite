@@ -230,7 +230,8 @@ const Printing = ({ location }) => {
                   process. Fortunately, students broke the Taz's every other day, so there were
                   plenty of learning opportunities. Over <b>sixteen</b> various 3D printers were
                   running full-time by the time I left. Now, as a graduate assistant, I am still
-                  maintaining four printers. Here is a full list of printers I've worked with:
+                  maintaining four printers for various research projects. Here is a complete list
+                  of printers I've worked with:
                 </p>
                 <ul className="printer-list">
                   {printers && printers.map((skill, i) => <li key={i}>{skill}</li>)}
@@ -252,154 +253,157 @@ const Printing = ({ location }) => {
             <div>
               <h2 className="numbered-heading1">Direct Metal Laser Sintering</h2>
               <p>
-                There were two primary subjects covered: pumps and electricity. Each topic was
-                covered for half of each day, and by the week's end, the concepts and projects
-                merged.
+                Fabricating complex metal parts through subtractive means (i.e., mills and lathes)
+                can quickly become time-consuming and expensive. For this reason, the engineering
+                machine shop rarely fabricated metal prototypes for indecisive students. However,
+                many senior design projects are sponsored by companies that expect more than a
+                plastic prototype. To resolve this issue, the college purchased a direct metal
+                printer called the DMP Flex 350.
               </p>
               <StyledPic>
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/printing/4.JPG"
-                    width={500}
+                    src="../../../src/images/projects/printing/2.JPG"
+                    width={800}
+                    objectFit="contain"
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="A student soldering"
+                    alt="The DMP Flex in its final spot"
                   />
-                  <figcaption>A student safely soldering wires to the battery casing</figcaption>
+                  <figcaption>The DMP Flex recently delivered</figcaption>
                 </div>
               </StyledPic>
+              <p>
+                The printer works rather well, but it requires significant setup and
+                post-processing. The metal particulate is microscopic and, in some cases, extremely
+                flammable; anyone interacting with the particulate has to wear a PAPR suit for
+                protection. The chamber must be pressurized and filled with argon, and the final
+                parts are removed with a bandsaw. Also, the print resolution isn't close to a
+                machined finish.
+              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/printing/5.JPG"
+                    width={800}
+                    objectFit="contain"
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="A metal pump impeller"
+                  />
+                  <figcaption>A finished pump impeller from the DMP Flex</figcaption>
+                </div>
+              </StyledPic>
+              <p>
+                Beyond setup and surface finish, metal prints have the classic 3D printing issue of
+                anisotropic properties, meaning different tensile strengths depending on the
+                measured direction. Without a reflow oven, the metal parts were non-load bearing.
+                Also, as the sintering laser moves along the bed, it kicks up the particulate in
+                front of it. This motion creates tiny inclusions in the finished part, leading to
+                further weaknesses.
+              </p>
+              <StyledPic>
+                <div className="wrapper">
+                  <StaticImage
+                    className="img"
+                    src="../../../src/images/projects/printing/3.JPG"
+                    width={800}
+                    objectFit="contain"
+                    quality={95}
+                    formats={['AUTO', 'WEBP', 'AVIF']}
+                    alt="The metal particulate inside the printing chamber"
+                  />
+                  <figcaption>Inside the printing chamber</figcaption>
+                </div>
+              </StyledPic>
+              <p>
+                With all that said, the printer still provides a promising way for students to
+                fabricate parts. The technology is still in its infancy, so I am excited to see how
+                future printers attempt to solve these issues.
+              </p>
             </div>
             <div>
               <h2 className="numbered-heading1">Stereolithography</h2>
               <p>
-                With electricity being a somewhat abstract concept, we designed a simple project
-                that demonstrated electromagnetism, voltage, resistance, and current by letting
-                students construct a small motor with magnets, two AA batteries, and a nail with
-                coiled wire. By applying a voltage to the nail, its magnetic field spun the eight
-                magnets on a 3D-printed octagon.
+                Classic FDM printers provide a cheap and quick way to print prototypes. However,
+                some applications call for parts with a tight tolerance or specific material
+                strength. For those, stereolithography, or resin printing, is a fantastic option. A
+                laser hardens resin on a platform that slowly moves upward layer by layer. While
+                more expensive to print than FDM, the laser creates a part with a microscopic layer
+                height. The finished prints can range from flexible to stiff depending on the resin
+                type.
               </p>
               <StyledPic>
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/printing/1.JPG"
-                    width={500}
-                    quality={95}
+                    src="../../../src/images/projects/printing/77.JPG"
+                    width={800}
+                    objectFit="contain"
+                    quality={85}
                     formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="A student soldering"
+                    alt="A finished resin print"
                   />
-                  <figcaption>A student safely soldering wires to the battery casing</figcaption>
+                  <figcaption>
+                    A finished resin print, demonstrating the Form 3's capabilities
+                  </figcaption>
                 </div>
               </StyledPic>
               <p>
-                This project was by the student's favorite since they were given the basics and then
-                allowed to customize their motor as much as possible. For example, one student
-                created a pinwheel projection that appeared animated as the attached wheel spun.
+                While at the fabrication lab, I managed three Form 3 resin printers and printed
+                prototypes ranging from a flexible lung to wax molds for lost wax casting. With the
+                MODEL group, I have set up and run the much larger Form 3L for research projects and
+                recently printed holders for the pecan impactor using durable resin.
               </p>
               <StyledPic>
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/printing/1.JPG"
-                    width={500}
-                    quality={95}
+                    src="../../../src/images/projects/printing/11.jpg"
+                    width={800}
+                    objectFit="contain"
+                    quality={85}
                     formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="A student's motor with pinwheel attacged'"
+                    alt="Finished resin prints for the pecan impactor'"
                   />
-                  <figcaption>A student's motor with the pinwheel disk spinning</figcaption>
+                  <figcaption>Finished parts for the pecan impactor</figcaption>
                 </div>
               </StyledPic>
             </div>
             <div>
               <h2 className="numbered-heading1">Fused Deposition Modeling</h2>
               <p>
-                Bringing the concepts together, the final project illustrated the Conversation of
-                Energy of both mechanical to hydraulic and electrical to hydraulic energy. To do so,
-                the section was divided into two groups with the same objective: pump water up a
-                2-meter hose into a bucket. Whichever team filled the 5-gallon bucket first (and
-                subsequently drenched the instructor underneath) won the competition.
+                Most of my 3D printing experience lies with FDM printers, and I have a love-hate
+                relationship with the tech. FDM printers are usually cheap and easy to start using,
+                perfect for the average student, but they can be challenging to fix, especially when
+                someone else breaks them. There is also the matter of company support, and since the
+                tech is in its infancy, many of the companies we bought printers from went under or
+                were bought out (Lulzbot, Dremel, Makerbot).
               </p>
               <StyledPic>
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/printing/1.JPG"
-                    width={600}
+                    src="../../../src/images/projects/printing/12.jpg"
+                    width={800}
+                    height={900}
+                    objectFit="contain"
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="Water bucket filling from hose"
+                    alt="The Dremel 3D45"
                   />
-                  <figcaption>The 5-gallon contraption being tested before use</figcaption>
+                  <figcaption>The Dremel 3D45 looking pretty</figcaption>
                 </div>
               </StyledPic>
               <p>
-                Both groups constructed a drive train using a rod fit into bearings that they
-                screwed into a plywood base. One group focused on electrical to mechanical
-                conversion and calculated the number and size of batteries necessary to power an
-                electric motor attached directly to a 3D printed pump.
-              </p>
-              <StyledPic>
-                <div className="wrapper">
-                  <StaticImage
-                    className="img"
-                    src="../../../src/images/projects/printing/1.JPG"
-                    width={600}
-                    quality={95}
-                    formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="A student using a drill"
-                  />
-                  <figcaption>A student working on the drivetrain platform</figcaption>
-                </div>
-              </StyledPic>
-              <p>
-                The other group devised a method of converting a bike's rotational energy into
-                hydraulic energy via a 3D-printed wheel attached to the drive train rod. This
-                objective was more difficult than intended. The students (and instructors) struggled
-                to fabricate a platform that kept the bike wheel steady and firmly placed onto the
-                wheel.
-              </p>
-              <StyledPic>
-                <div className="wrapper">
-                  <StaticImage
-                    className="img"
-                    src="../../../src/images/projects/sprinting/1.JPG"
-                    width={600}
-                    quality={95}
-                    formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="A student positioning a 3D printed wheel behind a bike"
-                  />
-                  <figcaption>
-                    A student calculating the necessary distance between wheels
-                  </figcaption>
-                </div>
-              </StyledPic>
-              <p>
-                With too much pressure, the wheel melted from friction after a few revolutions, and
-                too little pressure wouldn't spin the 3D print at all. Eventually, the students
-                switched to a grooved wooden wheel, and with both teams ready, the final half-day
-                focused on the competition.
-              </p>
-              <StyledPic>
-                <div className="wrapper">
-                  <StaticImage
-                    className="img"
-                    src="../../../src/images/projects/printing/1.JPG"
-                    width={600}
-                    quality={95}
-                    formats={['AUTO', 'WEBP', 'AVIF']}
-                    alt="Bike spinning on drivetrain"
-                  />
-                  <figcaption>
-                    Students using a motor to calculate the power output of the bike
-                  </figcaption>
-                </div>
-              </StyledPic>
-              <p>
-                Comparing the power output of both, most expected the battery team to win. However,
-                one of the students went insanely hard on the bike, almost winning the competition
-                and nearly passing out. Each week, we tinkered with the curriculum based on student
-                feedback, and overall, it was a great learning experience for all involved.
+                Despite those reasons, I am very excited about new iterations of FDM printers,
+                especially from{' '}
+                <a href="https://www.youtube.com/watch?v=9peACH52KTo">
+                  revolutionary companies like Prusa
+                </a>
+                . The next generation of students has incredible opportunities to build powerful
+                prototypes.
               </p>
             </div>
           </div>

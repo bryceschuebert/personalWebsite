@@ -10,9 +10,9 @@ tech:
   - FMD
   - SLA
   - DMP
-company: ''
-showInProjects: false
-showInArchive: false
+company: 'University of Georgia'
+showInProjects: true
+showInArchive: true
 ---
 
 With over five years of setting up, managing, and troubleshooting various 3D printer types, I have a deep understanding of 3D printing best practices and use cases.

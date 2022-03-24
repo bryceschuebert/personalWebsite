@@ -292,7 +292,7 @@ const SummerAcademy = ({ location }) => {
                 <div className="wrapper">
                   <StaticImage
                     className="img"
-                    src="../../../src/images/projects/summercamp/8.JPG"
+                    src="../../../src/images/projects/summercamp/8.jpg"
                     width={600}
                     quality={95}
                     formats={['AUTO', 'WEBP', 'AVIF']}
