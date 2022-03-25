@@ -7,6 +7,7 @@ import { srConfigDetails } from '@config';
 import sr from '@utils/sr';
 import { Layout } from '@components';
 import { usePrefersReducedMotion } from '@hooks';
+import Scroll from '../../components/scroll';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -172,6 +173,7 @@ const CovidResponse = ({ location }) => {
       <Helmet title="COVID-19" />
 
       <main>
+        <Scroll showBelow="250" />
         <header>
           <h1 className="big-heading">COVID-19 Response</h1>
           <p className="subtitle">March -- July 2020</p>

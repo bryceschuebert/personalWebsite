@@ -7,6 +7,5 @@ package-lock.json
 # Build directory
 /public
 .DS_Store
-src/components/scroll.js
 
 .vscode/
