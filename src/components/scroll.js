@@ -40,7 +40,7 @@ const IconButton = styled.button`
 
   }
 `;
-
+//color="var(--green)" size="40px"
 const Scroll = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true);
 
@@ -72,7 +72,7 @@ const Scroll = ({ showBelow }) => {
       {show && (
         <div>
           <IconButton onClick={handleClick}>
-            <MdExpandLess color="var(--green)" size="40px" />
+            <MdExpandLess />
           </IconButton>
         </div>
       )}
