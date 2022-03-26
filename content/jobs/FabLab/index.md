@@ -1,7 +1,7 @@
 ---
 date: '2020-08-01'
 title: 'Fabrication Lab Student Team Leader'
-company: 'UGA Fabrication Laboratory'
+company: 'Fabrication Laboratory'
 location: 'Athens, GA'
 range: 'May 2017 -- August 2020'
 url: 'https://www.engineering.uga.edu/fablab'

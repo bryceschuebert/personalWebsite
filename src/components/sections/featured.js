@@ -367,7 +367,7 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={internal ? internal : external ? external : '#'}>{title}</a>
                     </h3>
 
                     <div
@@ -403,7 +403,7 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+                  <a href={internal ? internal : external ? external : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
                 </div>

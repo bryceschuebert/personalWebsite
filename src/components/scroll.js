@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const IconButton = styled.button`
     position: fixed;
     z-index: 2;
-    padding: 28px;
+    padding: 26px;
     bottom: 2.8vh;
     right: 15%;
     border-radius: 55px;
@@ -39,6 +39,8 @@ const IconButton = styled.button`
   .arrow-up {
     color: var(--green);
     font-size: 25px;
+    height: 28px;
+    width: 28px;
   }
 
   }
