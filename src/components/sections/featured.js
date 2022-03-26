@@ -367,7 +367,11 @@ const Featured = () => {
                     <p className="project-overline">Featured Project</p>
 
                     <h3 className="project-title">
-                      <a href={internal ? internal : external ? external : '#'}>{title}</a>
+                      <Link
+                        to={`/projectDetails/${internal ? internal : external ? external : '#'}`}
+                      >
+                        {title}
+                      </Link>
                     </h3>
 
                     <div
@@ -403,9 +407,9 @@ const Featured = () => {
                 </div>
 
                 <div className="project-image">
-                  <a href={internal ? internal : external ? external : '#'}>
+                  <Link to={`/projectDetails/${internal ? internal : external ? external : '#'}`}>
                     <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
+                  </Link>
                 </div>
               </StyledProject>
             );
