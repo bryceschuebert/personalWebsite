@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import { Head, Loader, Nav, Social, Email, Footer } from '@components';
 import { GlobalStyle, theme } from '@styles';
+import Scroll from '../../src/components/scroll';
 
 const StyledContent = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Head />
-
+      <Scroll showBelow="250" />
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
