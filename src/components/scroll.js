@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { MdExpandLess } from '@react-icons/all-files/md/MdExpandLess';
+//import { MdExpandLess } from '@react-icons/all-files/md/MdExpandLess';
 import PropTypes from 'prop-types';
 
 //https://juliapottinger.com/react-gatsby-scroll-to-top/
@@ -40,7 +40,7 @@ const IconButton = styled.button`
 
   }
 `;
-//color="var(--green)" size="40px"
+
 const Scroll = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true);
 
@@ -55,7 +55,7 @@ const Scroll = ({ showBelow }) => {
       }
     }
   };
-
+  //            <MdExpandLess color="var(--green)" size="40px" />
   const handleClick = () => {
     window[`scrollTo`]({ top: 0, behavior: `smooth` });
   };
@@ -71,9 +71,7 @@ const Scroll = ({ showBelow }) => {
     <div>
       {show && (
         <div>
-          <IconButton onClick={handleClick}>
-            <MdExpandLess />
-          </IconButton>
+          <IconButton onClick={handleClick}>H</IconButton>
         </div>
       )}
     </div>
