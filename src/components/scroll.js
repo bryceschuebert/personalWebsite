@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { MdExpandLess } from '@react-icons/all-files/md/MdExpandLess';
-import { IconContext } from '@react-icons/all-files';
 import PropTypes from 'prop-types';
 
 //https://juliapottinger.com/react-gatsby-scroll-to-top/
@@ -9,14 +7,13 @@ import PropTypes from 'prop-types';
 const IconButton = styled.button`
     position: fixed;
     z-index: 2;
-    padding: 15px;
+    padding: 28px;
     bottom: 2.8vh;
     right: 15%;
-    border-radius: 40px;
+    border-radius: 55px;
     background-color: transparent;
     border: 2px solid var(--green);
-    transition: var(--transition);
-    
+
     &:hover,
     &:focus {
       background-color: var(--green-tint);
@@ -37,6 +34,11 @@ const IconButton = styled.button`
   @media (max-width: 768px) {
     bottom: 2.8vh;
     right: 5%;
+  }
+
+  .arrow-up {
+    color: var(--green);
+    font-size: 25px;
   }
 
   }
@@ -73,9 +75,7 @@ const Scroll = ({ showBelow }) => {
       {show && (
         <div>
           <IconButton onClick={handleClick}>
-            <IconContext.Provider value={{ color: 'var(--green', size: '40' }}>
-              <MdExpandLess />
-            </IconContext.Provider>
+            <p className="arrow-up">&#x25B2;</p>
           </IconButton>
         </div>
       )}
