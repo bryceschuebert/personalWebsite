@@ -29,9 +29,6 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-      #B {
-        opacity: 0;
-      }
     }
   }
 `;
@@ -46,18 +43,34 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '#logo path',
+        targets: '#logo #BLshort',
         delay: 300,
-        duration: 1500,
+        height: '82',
+        duration: 800,
         easing: 'easeInOutQuart',
-        strokeDashoffset: [anime.setDashoffset, 0],
       })
-      .add({
-        targets: '#logo #B',
-        duration: 700,
-        easing: 'easeInOutQuart',
-        opacity: 1,
-      })
+      .add(
+        {
+          targets: '#logo #TR1',
+          translateX: -10,
+          duration: 800,
+          easing: 'easeInOutQuart',
+          opacity: 1,
+        },
+        50,
+      )
+      .add(
+        {
+          targets: '#logo #BR1',
+          translateX: -22,
+          translateY: -20,
+          scale: 1.22,
+          duration: 800,
+          easing: 'easeInOutQuart',
+          opacity: 1,
+        },
+        50,
+      )
       .add({
         targets: '#logo',
         delay: 500,
