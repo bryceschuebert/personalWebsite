@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px"
+	 height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0A192F;}
+	.st1{fill:#64FFDA;}
+	.st2{display:none;fill:#64FFDA;}
+</style>
+<g id="Layer_2">
+	<rect class="st0" width="516" height="512"/>
+</g>
+<g id="Layer_1">
+	<circle class="st2" cx="25.73" cy="437.23" r="18"/>
+	<ellipse id="TL" class="st1" cx="336.69" cy="135.68" rx="92.88" ry="92.16"/>
+	<ellipse id="ITL" class="st1" cx="336.69" cy="135.68" rx="30.96" ry="30.72"/>
+	<ellipse id="BR" class="st1" cx="357.33" cy="355.84" rx="113.52" ry="112.64"/>
+	<ellipse id="IBR" class="st1" cx="357.33" cy="355.84" rx="46.44" ry="46.08"/>
+	<circle class="st2" cx="25.73" cy="484.23" r="18"/>
+	<path id="Long" class="st1" d="M45.15,375.6V137.93c0-51.3,41.58-92.88,92.88-92.88h0c51.3,0,92.88,41.58,92.88,92.88V375.6
+		c0,51.3-41.58,92.88-92.88,92.88h0C86.73,468.48,45.15,426.9,45.15,375.6z"/>
+</g>
+</svg>
