@@ -143,8 +143,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I’m Bryce—a mechanical engineer passionate about designing and developing
-              human-centered products.
+              Hello! I’m Bryce—a mechanical engineer growing in a manufacturing environment
             </p>
 
             <p>
