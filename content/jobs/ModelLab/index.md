@@ -3,7 +3,7 @@ date: '2020-08-21'
 title: 'Graduate Research Assistant'
 company: 'UGA MODE2L Group'
 location: 'Athens, GA'
-range: 'August 2020 -- Present'
+range: 'August 2020 -- May 2022'
 url: 'https://scholar.google.com/citations?user=caWh0iAAAAAJ&hl=en&oi=ao'
 ---
 

@@ -64,8 +64,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I am a mechanical engineer designing, fabricating, and delivering bespoke products.
-        Regardless of form, I am always looking for the next problem to solve.
+        I am a mechanical engineer with a passion for tackling the next generation of manufacturing challenges
       </p>
     </>
   );
