@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Bryce Schuebert',
     description:
-      'Bryce Schuebert is a mechanical engineer tackling the next generation of manufacturing challenges,
+      'Bryce Schuebert is a mechanical engineer tackling the next generation of manufacturing challenges'
     siteUrl: 'https://www.bryceschuebert.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bryceschuebert',
