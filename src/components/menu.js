@@ -267,7 +267,7 @@ const Menu = () => {
             )}
             <a
               className="resume-link"
-              href="/Bryce_Schuebert_PD_Spring2022.pdf"
+              href="/Bryce_Schuebert_2023_resume.pdf"
               target="_blank"
               rel="noopener noreferrer">
               Resume

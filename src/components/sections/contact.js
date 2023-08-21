@@ -60,8 +60,7 @@ const Contact = () => {
       <h2 className="title">Let's Talk</h2>
 
       <p>
-        I am completing my master's degree in May 2022, so I am open to chat! I'd love to hear from
-        you.
+        I am focused on building on my current experiences at Lockheed, but I am always open to chat!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
